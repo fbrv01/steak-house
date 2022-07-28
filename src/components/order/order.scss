@@ -1,43 +1,4 @@
 /* ================================================== */
-/* ===================== NAVBAR ===================== */
-/* ================================================== */
-
-
-.nav__container {
-    padding: 0 7%;
-    height: 5rem;
-    background: var(--color-white);
-    /* border: 5px solid purple; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: var(--fs-body-s);
-    line-height: var(--lh-body-l);
-}
-
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 3.3125rem
-}
-
-.nav-left__list {
-    display: flex;
-    gap: 3.3125rem
-}
-
-.nav-right__list {
-    display: flex;
-    gap: 2.5rem;
-}
-
-
-.small-btn {
-    padding: .75rem 1.5625rem;
-}
-
-
-/* ================================================== */
 /* ==================== order ==================== */
 /* ================================================== */
 
@@ -45,33 +6,35 @@
 
 /* ===================== STORES ===================== */
 .stores {
-    border: 5px solid orange;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .stores__list {
-    background: rgb(255, 174, 174);
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 4.25rem;
-    align-items: center;
+    display: flex;
+    position: relative;
 
     li {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: .875rem 0;
+        padding: .875rem 5vw;
     }
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 /* ====================== BODY ====================== */
 .order-body__container {
     display: flex;
     gap: 1rem;
-    /* padding-bottom: 5.625rem; */
-    border: 5px solid green;
     margin-bottom: 3rem;
+    padding: 0 1.5rem;
 }
 
 .card {
@@ -82,10 +45,6 @@
     border-radius: 7px;
     color: var(--color-white);
     background: var(--color-black);
-    /*     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 5rem; */
-    border: 3px solid red;
     height: 415px;
 
     h3 {
@@ -99,7 +58,6 @@
         font-size: var(--fs-body-m);
         line-height: var(--lh-body-l);
         margin-bottom: 0.875rem;
-        border: 1px solid #eee;
     }
 }
 
@@ -122,18 +80,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(65%);
-
 }
 
 .card__body {
     position: relative;
-    border: 3px solid blue;
     width: 300px;
 }
 
 .card__icon {
     display: flex;
     gap: .875rem;
+    padding: 1rem;
 }
 
 .--card-uber {
@@ -143,12 +100,7 @@
     position: relative;
 
 
-    .card__body {
-        border: 1px solid #eee;
-    }
-
     img {
-        border: 1px solid #eee;
         align-self: end;
     }
 
@@ -164,10 +116,80 @@
     }
 }
 
+@media screen and (max-width: 880px) {
+
+}
+
 @media screen and (max-width: 710px) {
 
     .card {
         padding: 2rem;
         justify-content: center;
+    }
+
+    .stores__list {
+        flex-direction: column;
+    }
+
+    .stores__list__second {
+        position: absolute;
+        left:10%;
+        opacity: 0;
+        animation: fadeOut 4s ease-in-out 5s infinite;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 1;
+        }
+
+
+        50% {
+            opacity: 1;
+        }
+
+        75% {
+            opacity: 1;
+        }
+
+    
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .stores__list__first {
+        opacity: 1;
+        animation: fadeIn 4s ease-in-out infinite;
+        animation-delay: 5s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 1;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+
+        50% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+    
+        100% {
+            opacity: 1;
+        }
     }
 }
