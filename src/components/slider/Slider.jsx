@@ -36,7 +36,7 @@ export default function Slider() {
               . Spiesz się, czas
               trwania promocji do końca lutego.
             </p>
-            <a href="./"><button type="button" className="btn">Zamów online</button></a>
+            <a href="#"><button type="button" className="btn">Zamów online</button></a>
           </div>
         </article>
       </SwiperSlide>
@@ -54,7 +54,7 @@ export default function Slider() {
               laudantium magnam
               <span className="--bold"> saepe -15%</span>
             </p>
-            <a href="./"><button type="button" className="btn">Zamów online</button></a>
+            <a href="#"><button type="button" className="btn">Zamów online</button></a>
           </div>
         </article>
       </SwiperSlide>
@@ -74,7 +74,7 @@ export default function Slider() {
               Excepturi, nulla
               nihil.
             </p>
-            <a href="./"><button type="button" className="btn">Zamów online</button></a>
+            <a href="#"><button type="button" className="btn">Zamów online</button></a>
           </div>
         </article>
       </SwiperSlide>
