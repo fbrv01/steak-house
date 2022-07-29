@@ -1,5 +1,5 @@
 
-![Logo](https://github.com/fbrv01/steak-house/blob/main/assets/icons/logo.svg)
+![Logo](https://github.com/fbrv01/steak-house/blob/main/src/assets/icons/logo.svg)
 
 
 # STEAK HOUSE
@@ -12,7 +12,7 @@ Header of Steak House restaurant - using design from Figma.
 - nav menu: should be responsive and interactive, links should be active but lead to nowhere
 - slider: animated slider with 3 slides (there might be 3 same ones), automatic moving from slide to slide and loop
 - logo bar: it should be responsive, on smaller resolutions it should show less logos, scrolling them
-- two ad boxes: both buttons and icons should be active,interactive and lead to nowhere
+- two ad boxes: both buttons and icons should be active, interactive and lead to nowhere
 
 Additional:
 - project has to be fully responsive (from 320px up to 1920px)
