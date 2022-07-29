@@ -7,8 +7,8 @@ export const orderData = [
     id: 1,
     title: 'Zestaw dla 3 osób',
     description: <p>
-      Razem smakuje lepiej! Zamów zestawy obiadowy dla  3 osób już od
-      <span className="--black-highlight">39 zł</span>
+      Razem smakuje lepiej! Zamów zestawy obiadowy dla  3 osób już od&nbsp;
+      <span className="highlight-black">39 zł</span>
                  </p>,
     className: '--card-offer',
   },
@@ -17,8 +17,8 @@ export const orderData = [
     id: 2,
     title: 'UberEats ',
     description: <p>
-      Zamawiaj w aplikacji
-      <span className="--black-highlight">10% taniej.</span>
+      Zamawiaj w aplikacji&nbsp;
+      <span className="highlight-red">10% taniej.&nbsp;</span>
       Pobierz aplikację UberEats już dziś.
       {' '}
                  </p>,

@@ -22,7 +22,7 @@ function Navbar() {
             <img src={logo} alt="logo" />
           </div>
           <ul className="nav-left__list">
-            {burgerMenuItems.map(item => (
+            {burgerMenuItems.map((item) => (
               <li>
                 <a href="#">{item}</a>
               </li>
