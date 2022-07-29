@@ -7,33 +7,26 @@ import Burger from '../burger/Burger';
 import menu from '../../assets/icons/menu.svg';
 
 function Navbar() {
+  const burgerMenuItems = ['Steaks', 'Burgers', 'French fries', 'Drinks', 'Gdzie dowozimy?', 'Kontakt'];
   return (
     <nav id="nav">
-      <Burger pageWrapId="main" outerContainerId="nav" customBurgerIcon={<img src={menu} alt="menu" />}  />
+      <Burger
+        items={burgerMenuItems}
+        pageWrapId="main"
+        outerContainerId="nav"
+        customBurgerIcon={<img src={menu} alt="menu" />}
+      />
       <div className="nav__container">
         <div className="nav-left">
           <div className="logo">
             <img src={logo} alt="logo" />
           </div>
           <ul className="nav-left__list">
-            <li>
-              <a href="#">Steaks</a>
-            </li>
-            <li>
-              <a href="#">Burgers</a>
-            </li>
-            <li>
-              <a href="#">French fries</a>
-            </li>
-            <li>
-              <a href="#">Drinks</a>
-            </li>
-            <li>
-              <a href="#">Gdzie dowozimy?</a>
-            </li>
-            <li>
-              <a href="#">Kontakt</a>
-            </li>
+            {burgerMenuItems.map(item => (
+              <li>
+                <a href="#">{item}</a>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="nav-right">
