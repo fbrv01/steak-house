@@ -1,7 +1,3 @@
-
-![Logo](https://github.com/fbrv01/steak-house/blob/main/src/assets/icons/logo.svg)
-
-
 # STEAK HOUSE
 
 Header of Steak House restaurant - using design from Figma.
