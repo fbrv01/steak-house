@@ -54,7 +54,6 @@
         padding: .75rem 1.5625rem;
         gap: 10px;
     }
-
 }
 
 
@@ -131,9 +130,6 @@
     background: rgba(0, 0, 0, 0.3);
 }
 
-
-
-
 @media screen and (max-width: 1260px) {
     .nav-left__list {
         display: none;
@@ -147,12 +143,9 @@
     .logo {
         margin: 0 2rem;
     }
-
 }
 
 @media screen and (max-width: 710px) {
-
-
     .hero__left {
         width: 100%;
         min-height: 35rem;
@@ -170,13 +163,9 @@
             gap: 10px;
         }
     }
-
-
-
 }
 
 @media screen and (max-width: 475px) {
-
     .logo {
         display: none;
     }
@@ -184,6 +173,4 @@
     .bm-burger-button {
         left: 1rem;
     }
-
-
 }
